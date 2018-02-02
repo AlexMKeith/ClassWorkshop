@@ -1,5 +1,6 @@
 package com.company;
 
+
 public class Pet {
 
     private String ownerName;
@@ -8,7 +9,16 @@ public class Pet {
     private int age;
     private char gender;
 
+    public Pet(String ownerName, String petName, String homeAddress, int age, char gender) {
+        this.ownerName = ownerName;
+        this.petName = petName;
+        this.homeAddress = homeAddress;
+        this.age = age;
+        this.gender = gender;
+    }
 
+    public Pet() {
+    }
 
     public String getOwnerName() {
         return ownerName;
@@ -45,7 +55,13 @@ public class Pet {
     public char getGender() {
         return gender;
     }
-    protected String makeSound(){
-        return "Pets don't make sound.";
+
+    public void setGender(char gender) {
+        this.gender = gender;
+    }
+
+    protected String makeSound() {
+
+        return "Pets make no sound.";
     }
 }

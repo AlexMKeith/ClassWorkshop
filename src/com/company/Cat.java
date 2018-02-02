@@ -6,6 +6,23 @@ public class Cat extends Pet {
     private boolean usesLitterbox;
     private String furType;
 
+    public Cat(String ownerName, String petName, String homeAddress, int age, char gender, boolean likesCatnip, boolean usesLitterbox, String furType ) {
+        super(ownerName, petName, homeAddress, age, gender);
+
+//    public Cat(String ownerName, String petName, String homeAddress, int age, char gender, boolean likesCatnip, boolean usesLitterbox, String furType) {
+
+//        super(ownerName, petName, homeAddress, age, gender);
+
+
+        this.likesCatnip = likesCatnip;
+        this.usesLitterbox = usesLitterbox;
+        this.furType = furType;
+
+        System.out.println();
+    }
+
+
+
     public boolean isLikesCatnip() {
         return likesCatnip;
     }
@@ -29,6 +46,9 @@ public class Cat extends Pet {
     public void setFurType(String furType) {
         this.furType = furType;
     }
-    @Override
 
+    @Override
+    protected String makeSound() {
+        return "MEOWWWWWW!!!!!!!!";
+    }
 }
