@@ -39,4 +39,9 @@ public class Dog extends Pet {
     public void setCoatType(String coatType) {
         this.coatType = coatType;
     }
+
+    @Override
+    protected String makeSound() {
+        return super.makeSound() +"BUT dogs bark";
+    }
 }

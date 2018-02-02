@@ -8,6 +8,8 @@ public class Pet {
     private int age;
     private char gender;
 
+
+
     public String getOwnerName() {
         return ownerName;
     }
@@ -43,8 +45,7 @@ public class Pet {
     public char getGender() {
         return gender;
     }
-
-    public void setGender(char gender) {
-        this.gender = gender;
+    protected String makeSound(){
+        return "Pets don't make sound.";
     }
 }
