@@ -16,7 +16,7 @@ public class Dog extends Pet {
     }
 
 
-    public Dog(String ownerName, String petName, String homeAddress, int age, char gender, boolean likesWalks, boolean canFetch, String coatType, Scanner input) {
+    public Dog(String ownerName, String petName, String homeAddress, int age, char gender, boolean likesWalks, boolean canFetch, String coatType) {
         super(ownerName, petName, homeAddress, age, gender);
         this.likesWalks = likesWalks;
         this.canFetch = canFetch;
